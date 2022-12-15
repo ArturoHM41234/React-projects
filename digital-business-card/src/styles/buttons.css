@@ -1,0 +1,31 @@
+.buttons-container {
+    margin: 25px 35px 0 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.buttons {
+    border-radius: 6px;
+    height: 37px;
+    width: 115px;
+    text-align: center;
+    padding: 9px 13px 9px 11px;
+    border: none;
+}
+
+.buttons:hover {
+    opacity: 0.9;
+}
+
+.button--email {
+    margin-right: 15px;
+    background-color: #FFFFFF;
+    display: inline-block;
+    color: #000000;
+}
+
+.button--linkedIn {
+    background-color: #5093E2;
+    color: #FFFFFF;
+}

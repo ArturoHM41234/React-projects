@@ -1,0 +1,12 @@
+.photo--container {
+    width: 317px;
+    height: 317px;
+    margin: 0;
+    padding: 0;
+}
+
+.photo--img {
+    border-radius: 10px 10px 0px 0px;
+    max-width: 100%;
+    height: auto;
+}

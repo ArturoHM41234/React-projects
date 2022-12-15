@@ -1,0 +1,23 @@
+footer {
+    border-radius: 0 0 10px 10px;
+    height: 64px;
+    width: 317px;
+    background-color: #161619;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer button {
+    margin: 13px;
+    height: 25px;
+    width: 25px;
+    border: none;
+    background-color: #918E9B;
+    border-radius: 3px;
+}
+
+footer button:hover {
+    background-color:#AB625F;
+
+}
