@@ -1,0 +1,89 @@
+* {
+    font-family: 'Karla'
+}
+body {
+    background: #0B2434;
+    margin: 0;
+    padding: 20px;
+    display: grid;
+    place-content: center;
+}
+
+main {
+    background-color: #F5F5F5;
+    height: 400px;
+    min-width: 400px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.dice--container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.dice {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.15);
+}
+
+.dice:hover{
+    cursor: pointer;
+}
+
+.dice p {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Karla';
+}
+
+.roll--button {
+    margin-top: 30px;
+    background-color:  #5080ED;
+    color: white;
+    font-weight: bolder;
+    height: 40px;
+    width: 90px;
+    border: none;
+    border-bottom: .5rem solid #5035FF;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.1s;
+		  
+}
+
+.roll--button:hover {
+    margin-top: 32px;
+    cursor: pointer;
+    border-bottom-width: .3rem;
+}
+
+.roll--button:active {
+    margin-top: 35px;
+    border-bottom-width: 0px;
+}
+
+.title {
+    font-size: 50px;
+    margin: 0;
+}
+
+.instructions {
+    color: #5887bc;
+    font-weight: 400;
+    margin-top: 0;
+    text-align: center;
+    width: 50%;
+    font-weight: 28px;
+}
