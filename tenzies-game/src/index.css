@@ -48,6 +48,23 @@ main {
     font-family: 'Karla';
 }
 
+.dot {
+    background-color: #0B2434;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.15);
+}
+
+.dots--container {
+    display: grid;
+    grid-template-areas:
+        "a . c"
+        "e g f"
+        "d . b";
+}
+
 .roll--button {
     margin-top: 30px;
     background-color:  #5080ED;
