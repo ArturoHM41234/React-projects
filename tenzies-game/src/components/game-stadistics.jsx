@@ -1,9 +1,16 @@
 import React from "react";
 
-export default function Timer(props) {
+export default function GameStadistics(props) {
   const [time, setTime] = React.useState({ ms: 0, s: 0, m: 0, h: 0 });
+  const [stats, setStats] = React.useState(() => JSON.parse(localStorage.getItem("game-stats")) || []);
 
   React.useEffect(() => {
+    let newStats = [time, props.rolls]
+    localStorage.setItem('game-stats', JSON.stringify(newStats))
+  }, [time]);
+
+  React.useEffect(() => {
+    //count the time
     const getTimeTimer = () => {
       let miliSeconds = time.ms,
         seconds = time.s,
@@ -26,7 +33,7 @@ export default function Timer(props) {
       return { ms: miliSeconds, s: seconds, m: minutes, h: hours };
     }
 
-    //
+    //update the timer
     if(props.status) {
        setTimeout(() => {
         setTime(getTimeTimer());
@@ -52,8 +59,9 @@ export default function Timer(props) {
     );
   }
   return (
-    <div className="timer">
-      <CountTime />
+    <div className="stadistics--container">
+      <div className="timer"><CountTime /></div>
+      <p className="counter roll--counter"># of rolls: {props.rolls}</p>
     </div>
   );
 }

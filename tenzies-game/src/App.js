@@ -2,7 +2,7 @@ import React from "react";
 import Dice from "./components/dice";
 import { nanoid } from "nanoid";
 import Confetti from "react-confetti";
-import Timer from "./components/timer";
+import GameStadistics from "./components/game-stadistics";
 
 let renderCounter = 0;
 
@@ -100,16 +100,11 @@ function App() {
       <div className="dice--container">{diceElements}</div>
       <button
         className="roll--button "
-        onClick={() => {
-          rollDices();
-        }}
+        onClick={rollDices}
       >
         {action}
       </button>
-      <div className="stadistics--container">
-        <Timer className="counter" status={status} tenzies={tenzies}/>
-        <p className="counter roll--counter"># of rolls: {rolls}</p>
-      </div>
+        <GameStadistics className="counter" status={status} tenzies={tenzies} rolls={rolls}/>
     </main>
   );
 }
