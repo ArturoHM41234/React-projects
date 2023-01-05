@@ -125,3 +125,18 @@ main {
     font-weight: 28px;
     font-size: 20px;
 }
+
+.stadistics--container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    width: 40%;
+}
+
+.counter {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+
