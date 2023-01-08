@@ -14,6 +14,7 @@ function App() {
   const [status, setStatus] = React.useState(false); //handle the start/stop of the timer
   //true = started
   //false = stopped
+  
 
   //get the number for every dice
   function getDicesNumber() {
